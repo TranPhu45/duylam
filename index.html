@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân - Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            width: 150px;  /* Tăng kích thước ảnh đại diện */
+            height: 150px; /* Tăng kích thước ảnh đại diện */
+            border-radius: 50%;  /* Giữ dạng tròn */
+            margin-right: 20px;  /* Giữ khoảng cách giữa ảnh và thông tin */
+            position: relative;
+            top: -30px;  /* Dời ảnh đại diện lên cao một chút */
+        }
+        .header .profile-info {
+            font-size: 18px;
+            max-width: 60%;  /* Giới hạn độ rộng của thông tin cá nhân */
+        }
+        .header .profile-info h1 {
+            margin: 0;
+            color: #333;
+        }
+        .header .profile-info p {
+            color: #777;
+        }
+        /* Điều chỉnh phần thống kê (dời lên trên nhiều hơn) */
+        .header .profile-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;  /* Thêm khoảng cách giữa thông tin cá nhân và phần thống kê */
+            flex: 1;
+            grid-gap: 40px;
+            margin-top: -125px;  /* Dời phần thống kê lên cao hơn */
+        }
+        .header .profile-stats div {
+            text-align: center;
+        }
+        .header .profile-stats div h2 {
+            margin: 0;
+            color: #333;
+        }
+        .header .profile-stats div p {
+            color: #777;
+        }
+        /* Điều chỉnh phần bài đăng */
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: space-between;  /* Căn chỉnh các phần tử đều nhau */
+}
+
+.post {
+    width: 32%;  /* Mỗi bài đăng chiếm khoảng 1/3 chiều rộng */
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post .caption {
+    padding: 10px;
+    color: #333;
+}
+
+.post .caption p {
+    font-size: 14px;
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Section -->
+    <div class="header">
+        <img src="D:\Vẽ\avt.jpg" alt="Ảnh đại diện">
+        
+        <!-- Profile Info (Tên, Bio) -->
+        <div class="profile-info">
+            <h1>Võ Trần Duy Lâm</h1>
+            <p>@zuy_lemm</p>
+            <p>Đam mê lập trình, yêu thích công nghệ và sáng tạo.</p>
+            <p>Sở thích chụp ảnh và sưu tập truyện tranh.<br>
+            <p>Contact for work: votranduylam2007bc@gmail.com.</p>
+        </div>
+
+        <!-- Profile Stats (Người theo dõi, Đang theo dõi, Bài đăng) -->
+        <div class="profile-stats">
+            <div>
+                <h2>19</h2>
+                <p>Người theo dõi</p>
+            </div>
+            <div>
+                <h2>7</h2>
+                <p>Đang theo dõi</p>
+            </div>
+            <div>
+                <h2>3</h2>
+                <p>Bài đăng</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Posts Section -->
+    <div class="posts">
+        <div class="post">
+            <img src="D:\Vẽ\dl2.jpg" alt="Post 1">
+            <div class="caption">
+                <p>thich chup anh.</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="D:\Vẽ\dl1.jpg" alt="Post 2">
+            <div class="caption">
+                <p>ai chup ma dep qua.</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="D:\Vẽ\dl3.jpg" alt="Post 3">
+            <div class="caption">
+                <p>no caption.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
